@@ -1,9 +1,6 @@
 ---
 - name: Install Java 1.8
   yum: name=java-1.8.0-openjdk state=present
-  apt:
-    update_cache: yes
-    cache_valid_time: 3600
 
 - name: add group "tomcat"
   group: name={{tomcat_group}}
